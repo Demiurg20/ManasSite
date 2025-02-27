@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Саякбай Каралаев - Великий Манасчи</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="https://foto.kg/uploads/posts/2014-11/1417025780_1.jpg" alt="Саякбай Каралаев" class="main-portrait">
+            </div>
+            <h1>Саякбай Каралаев</h1>
+            <p class="subtitle">Великий киргизский манасчи (1894-1971)</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="button-group">
+                <button onclick="openModal('biography')" class="nav-button">Биография</button>
+                <button onclick="openModal('early-years')" class="nav-button">Ранние годы</button>
+                <button onclick="openModal('uprising')" class="nav-button">Восстание и служба</button>
+                <button onclick="openModal('career')" class="nav-button">Карьера</button>
+                <button onclick="openModal('creative')" class="nav-button">Творчество</button>
+                <button onclick="openModal('awards')" class="nav-button">Награды</button>
+                <button onclick="openModal('legacy')" class="nav-button">Наследие</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Модальные окна -->
+
+
+    <div id="uprising" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('uprising')">&times;</span>
+            <h2>Восстание 1916 года и служба в Красной Армии</h2>
+            <div class="modal-body">
+                <div class="image-container">
+                    <img src="https://foto.kg/uploads/posts/2013-07/1374165986_karalaev-1.jpg" alt="Исторический период" class="modal-image">
+                </div>
+                <p>В 1916 году, в возрасте 22 лет, Саякбай активно участвовал в <strong>Восстании кыргызов против экспансии Российской империи</strong>, что отразило его активную гражданскую позицию и стремление бороться за права своего народа.</p>
+                <p>В 1918 году, после окончания восстания, он записался добровольцем в Красную Армию. Он служил в Туркестанском фронте до 1922 года, где продолжал исполнять народные песни и эпосы, при этом принимая участие в военных действиях.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно "Карьера" -->
+    <div id="career" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('career')">&times;</span>
+            <h2>Карьера</h2>
+            <div class="modal-body">
+                <div class="image-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI4j9vI-fIEvX3i10j6OPuNZXxsb-LZR39Eg&s" alt="Саякбай Каралаев во время выступления" class="modal-image">
+                    <img src="https://sputnik.kg/img/101341/07/1013410787_0:0:2119:2048_1920x0_80_0_0_cfd6e3dbc64e289604979c8a9202ebb4.jpg" alt="Саякбай Каралаев исполняет Манас" class="modal-image">
+                </div>
+                <p>Карьера Саякбая Каралаева началась с его увлечения народным эпосом «Манас» в детстве. В 1920-х годах, после встречи с манасчи <strong>Чоюке Омуровым</strong>, он посвятил себя профессиональному исполнению эпоса.</p>
+                <p>В 1930 году Каралаев был приглашён в <strong>Фрунзе</strong>, где стал известным манасчи, исполняющим «Манас» на протяжении месяцев. Его творчество было записано, и эти записи стали важным культурным наследием.</p>
+                <p>Саякбай был удостоен звания народного артиста Киргизской ССР в 1939 году и награждён несколькими орденами. Его карьера продолжалась до конца жизни, и он стал одним из главных хранителей и популяризаторов киргизского эпоса.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно "Награды" -->
+    <div id="awards" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('awards')">&times;</span>
+            <h2>Награды и признание</h2>
+            <div class="modal-body">
+                <div class="awards-container">
+                    <div class="award-item">
+                        <img src="https://data.vb.kg/image/big/2015-12-14_09-57-41_210356_w.jpg" alt="Награды Саякбая Каралаева" class="award-image">
+                        <div class="award-info">
+                            <h3>Народный артист Киргизской ССР (1939)</h3>
+                        </div>
+                    </div>
+                </div>
+                <p>В 1939 году Саякбаю Каралаеву было присвоено звание <strong>народного артиста Киргизской ССР</strong>, что стало признанием его заслуг в области искусства. Он был награждён несколькими орденами, в том числе орденами <strong>Трудового Красного Знамени</strong> и <strong>Знак Почёта</strong>.</p>
+                <p>Его вклад в культуру Киргизстана и сохранение эпоса был настолько значителен, что его имя стало неотъемлемой частью киргизской национальной идентичности. Его записи и рассказы о «Манасе» до сих пор являются важным источником для изучения киргизского фольклора и эпической традиции.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="biography" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('biography')">&times;</span>
+            <h2>Биография</h2>
+            <div class="modal-body">
+                <div class="image-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-vAaicoyHPNEVnallwINB1FDlk2PSXPslw&s" alt="Саякбай Каралаев портрет" class="biography-image">
+                    <img src="https://foto.kg/uploads/posts/2014-11/1417109139_img_9097.jpg" alt="Саякбай Каралаев исполняет Манас" class="biography-image">
+                </div>
+                <p><strong>Саякбай Каралаев</strong> (7 сентября 1894 — 7 мая 1971) — великий киргизский эпический певец, манасчи, народный артист Киргизской ССР, прославившийся своими исполнениями эпоса <strong>«Манас»</strong>.</p>
+                <p>Саякбай Каралаев — один из величайших манасчи 20 века, чьи исполнения эпоса оказали огромное влияние на киргизскую культуру и традиции.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="early-years" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('early-years')">&times;</span>
+            <h2>Ранние годы</h2>
+            <div class="modal-body">
+                <div class="image-container">
+                    <img src="https://cdn-1.aki.kg/127/.storage/limon2/images/october2/80bf5d5247da94a4227e9de79513b1be.jpg" alt="Молодой Саякбай Каралаев" class="modal-image">
+                </div>
+                <p>Саякбай Каралаев родился в деревне <strong>Ак-Олён</strong> (ныне в Иссык-Кульской области Кыргызстана) в бедной семье, принадлежавшей к роду Арык племени Бугу.</p>
+                <p>С детства проявлял большой интерес к народному искусству и эпосам, особенно к <strong>«Манасу»</strong>, который был не только его культурным наследием, но и вдохновлял на поэтические изыскания.</p>
+                <p>Его бабушка, которая передавала народные эпосы, стала его первым учителем в освоении эпической традиции. В юные годы Каралаев начал запоминать отрывки из «Манаса», что стало основой для его дальнейшего творчества.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="creative" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('creative')">&times;</span>
+            <h2>Творчество</h2>
+            <div class="modal-body">
+                <div class="image-grid">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTU535nnRkzlT1R__5KJl2L4y6MZpvbT-2gw&s" alt="Саякбай Каралаев во время выступления" class="modal-image">
+                    <img src="https://sputnik.kg/img/07e4/09/17/1049712757_0:0:3068:2048_1920x0_80_0_0_aeef3bc1164570167ef614869eb864db.jpg" alt="Саякбай Каралаев рассказывает Манас" class="modal-image">
+                </div>
+                <p>Саякбай Каралаев стал одним из самых известных исполнителей эпоса «Манас» в Киргизии. Он мог исполнять эпос, длина которого составляет тысячи строк, на протяжении месяцев, передавая его различные версии и вариации.</p>
+                <p>Его исполнение «Манаса» отличалось глубиной и выразительностью. Он записал множество вариантов эпоса, оставив незаменимый след в киргизской культуре.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="legacy" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('legacy')">&times;</span>
+            <h2>Наследие</h2>
+            <div class="modal-body">
+                <div class="image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0C7pgbN7QdN8DBDq6CD1lg9d5oH-PnvU2vg&s" alt="Памятная фотография Саякбая Каралаева" class="modal-image">
+                </div>
+                <p>В память о Саякбае Каралаеве были выпущены несколько книг, а также снят фильм о его жизни и творчестве. В 2017 году был выпущен фильм <strong>«Саякбай. Гомер 20 века»</strong>.</p>
+                <div class="banknote-container">
+                    <img src="https://www.nbkr.kg/DOC/UDN/500_images/500_front.gif" alt="Банкнота 500 сом с изображением Саякбая Каралаева" class="banknote">
+                    <p class="image-caption">Банкнота 500 сом с изображением Саякбая Каралаева</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Саякбай Каралаев - Великий Манасчи. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
